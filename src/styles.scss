@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+// Defina suas variáveis personalizadas
+$primary: #111111;
+$body-bg: #151515;
+* {
+  color: white
+}
+
+.red {
+  background-color: red;
+  color: red;
+}
+
+.dart-input {
+  background-color: #0f0f0f; /* Fundo escuro */
+  border: 0;
+  border-radius: 7px;
+  color: #ffffff; /* Texto branco */
+  padding: 10px 15px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  outline: none; /* Remove a borda de foco padrão */
+  transition: all 0.3s ease-in-out;
+}
+
+// Importe o Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+

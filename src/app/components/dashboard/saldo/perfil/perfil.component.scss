@@ -1,0 +1,8 @@
+$imageSize: 120px;
+
+:host {
+  img {
+    width: $imageSize;
+    height: $imageSize;
+  }
+}
