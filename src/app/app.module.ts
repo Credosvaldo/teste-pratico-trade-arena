@@ -16,6 +16,8 @@ import { TableComponent } from './components/dashboard/estrato/table/table.compo
 import { DepositarComponent } from './components/dashboard/operacoes/depositar/depositar.component';
 import { ResgatarComponent } from './components/dashboard/operacoes/resgatar/resgatar.component';
 import { OperationBoxComponent } from './components/dashboard/operacoes/operation-box/operation-box.component';
+import { PaginationComponent } from './components/dashboard/estrato/pagination/pagination.component';
+import { LineComponent } from './shared/line/line.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { OperationBoxComponent } from './components/dashboard/operacoes/operatio
     DepositarComponent,
     ResgatarComponent,
     OperationBoxComponent,
+    PaginationComponent,
+    LineComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

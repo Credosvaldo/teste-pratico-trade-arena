@@ -1,8 +1,9 @@
 // Defina suas variáveis personalizadas
 $primary: #111111;
 $body-bg: #151515;
+
 * {
-  color: white
+  color: white;
 }
 
 .red {
@@ -10,7 +11,7 @@ $body-bg: #151515;
   color: red;
 }
 
-.dart-input {
+input {
   background-color: #0f0f0f; /* Fundo escuro */
   border: 0;
   border-radius: 7px;
@@ -21,6 +22,16 @@ $body-bg: #151515;
   transition: all 0.3s ease-in-out;
 }
 
+select,
+input[type="date"] {
+  display: block;
+  background-color: $body-bg;
+  border: 1px solid #828282;
+  border-radius: 9px;
+  margin: 5px !important;
+  padding: 5px 10px;
+  color: #828282;
+}
+
 // Importe o Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
-

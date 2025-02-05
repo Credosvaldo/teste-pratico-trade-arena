@@ -1,0 +1,26 @@
+$mrginY: 50px;
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .line {
+    margin-top: $mrginY;
+    margin-bottom: $mrginY;
+    width: 100%;
+    height: 1.5px; /* Espessura da linha */
+    background: linear-gradient(
+      to right,
+      transparent 10%,
+      /* Início bem fraco */ rgba(255, 255, 255, 0.3) 25%,
+      /* Começa a aparecer */ rgba(255, 255, 255, 0.8) 40%,
+      /* Mais forte */ #828282 50%,
+      /* Pico do branco no centro */ rgba(255, 255, 255, 0.8) 60%,
+      /* Começa a suavizar */ rgba(255, 255, 255, 0.3) 75%,
+      /* Quase sumindo */ transparent 90% /* Final bem fraco */
+    );
+    background: linear-gradient(to right, transparent, #515151, transparent);
+    border-radius: 2px; /* Suaviza as bordas */
+  }
+}

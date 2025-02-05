@@ -1,29 +1,24 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-container my-5">
+  <table>
+    <thead>
+      <tr>
+        <th>Data da transação</th>
+        <th>Valor</th>
+        <th>Saldo</th>
+        <th>Informação adicional</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="my-5" *ngFor="let transaction of transactions; let i = index">
+        <td>{{ transaction.date }}</td>
+        <td>
+          <span [className]="isPositive(i)">{{ transaction.amount }}</span>
+        </td>
+        <td>{{ transaction.balance }}</td>
+        <td>{{ transaction.additionalInfo }}</td>
+        <td>{{ transaction.type }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

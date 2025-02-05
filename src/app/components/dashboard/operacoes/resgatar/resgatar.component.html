@@ -1,16 +1,13 @@
-<app-box>
-  <h6>RESGATAR</h6>
-
-  <div>
-    <label for="regatar">Valor que deseja resgatar via PIX</label>
-    <input type="text" id="regatar" />
-    <button>Selecione sua chave pix</button>
-    <button>Solicitar resgate</button>
+<app-operation-box
+  name="RESGATAR"
+  footerMessage="As transferências são aprovadas e realizadas em até 48h úteis. A conta
+  destino que receberá o resgate deve ser vinculada ao mesmo CPF/CNPJ do seu
+  cadastro."
+>
+  <div class="d-flex flex-column p-4">
+    <label class="d-block text-center mb-3" for="regatar">Valor que deseja resgatar via PIX</label>
+    <input class="d-block " type="text" id="regatar" />
+    <button class="btn btn-primary text-nowrap mt-1 d-block ">Selecione sua chave pix</button>
+    <button class="btn btn-primary text-nowrap mt-1 d-block ">Solicitar resgate</button>
   </div>
-
-  <span>
-    As transferências são aprovadas e realizadas em até 48h úteis. A conta
-    destino que receberá o resgate deve ser vinculada ao mesmo CPF/CNPJ do seu
-    cadastro.
-  </span>
-</app-box>
+</app-operation-box>
