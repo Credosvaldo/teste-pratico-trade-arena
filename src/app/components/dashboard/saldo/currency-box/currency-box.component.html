@@ -21,8 +21,8 @@
       <span class="h1 fw-bolder m-0" [ngClass]="{ 'text-yellow': name !== 'SALDO', 'text-green': name === 'SALDO' }">
         {{valor}}
       </span>
-      <span class="unit pt-2 ms-1 value-simbols">
-        reais
+      <span class="unit pt-3 ms-1 value-simbols">
+        {{ name != 'SALDO' ? 'mil' : 'reais' }}
       </span>
     </div>
   </div>

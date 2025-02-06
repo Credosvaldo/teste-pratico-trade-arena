@@ -9,6 +9,6 @@ export class CurrencyBoxComponent {
   @Input({required: true}) name! : string;
   @Input({required: true}) image! : string;
   @Input({required: true}) unit! : string;
-  @Input({required: true}) valor! : number;
+  @Input({required: true}) valor! : string;
 
 }
