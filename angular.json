@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/teste-pratico-trade-arena/",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -98,3 +97,4 @@
     "analytics": "8a9691ff-9661-4582-a06f-38920c4c516f"
   }
 }
+
