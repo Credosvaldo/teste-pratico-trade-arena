@@ -1,10 +1,6 @@
 $imageContainerSize: 80px;
 
 :host {
-  .currency-box {
-    height: 100%;
-  }
-
   .text-green {
     color: rgb(19, 206, 19);
   }
@@ -23,8 +19,9 @@ $imageContainerSize: 80px;
     max-height: 100%;
   }
 
-  .content {
-    padding-left: 2.3em;
-    padding-right: 2.3em;
+  .box {
+    display: block;
+    height: 250px;
   }
+
 }

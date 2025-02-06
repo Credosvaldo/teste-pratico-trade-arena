@@ -1,10 +1,35 @@
+$padding: 30px;
+$offset: .7px;
+
 :host {
+  position: relative;
   display: block;
   background-color: #171818;
   // border: white solid 1px;
   color: white;
-  border-radius: 12%;
-  box-shadow: rgb(17, 17, 17) -10px 10px 3px;
+  border-radius: 30px;
+  padding: $padding;
+  // box-shadow: rgb(17, 17, 17) -10px 10px 3px;
 
+  .fade-border {
+    padding: $padding + $offset;
+    box-sizing: content-box;
+    position: relative;
+    // height: calc(100% + #{2 * $offset});
+    height: 100%;
+    width: 100%;
+    top: calc(-100% - #{$padding + $offset/2 + 0.5px});
+    right: $padding + $offset/2 + 0.5px;
+    // transform: translate(-50%, -50%);
+    // top: 50%;
+    // right: 50%;
+    z-index: -1;
+    border-radius: 30px;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(255, 255, 255),
+      transparent
+    );
+  }
 
 }

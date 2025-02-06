@@ -1,0 +1,8 @@
+$marginY: 50px;
+
+:host {
+  .big-margin {
+    margin-top: $marginY;
+    margin-bottom: $marginY;
+  }
+}
