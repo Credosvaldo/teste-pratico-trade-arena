@@ -1,6 +1,6 @@
 # TestePraticoTradeArena
 
-![Tela da aplicação](docs/tela_da_aplicacao.png)
+![Tela da aplicação](tela_da_aplicacao.png)
 
 Teste prático realizado para uma vaga de desenvolvedor front-end da empresa [Trade Arena](https://www.tradearena.com.br/). O projeto é em sua maior parte estático e foi produzido com o uso do **Angular 16**, utilizando **SCSS** para estilização.
 
