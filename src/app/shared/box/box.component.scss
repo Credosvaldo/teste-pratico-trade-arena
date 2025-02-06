@@ -9,17 +9,20 @@ $offset: .7px;
   color: white;
   border-radius: 30px;
   padding: $padding;
-  // box-shadow: rgb(17, 17, 17) -10px 10px 3px;
+  //box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+
+  //box-shadow: rgb(17, 17, 17) -10px 10px 3px;
 
   .fade-border {
+    box-shadow: rgb(17, 17, 17) -10px 10px 3px;
     padding: $padding + $offset;
     box-sizing: content-box;
     position: relative;
     // height: calc(100% + #{2 * $offset});
     height: 100%;
     width: 100%;
-    top: calc(-100% - #{$padding + $offset/2 + 0.5px});
-    right: $padding + $offset/2 + 0.5px;
+    top: calc(-100% - calc($padding + $offset/2 + 0.5px));
+    right: calc($padding + $offset/2 + 0.5px);
     // transform: translate(-50%, -50%);
     // top: 50%;
     // right: 50%;
@@ -27,7 +30,7 @@ $offset: .7px;
     border-radius: 30px;
     background-image: linear-gradient(
       to bottom right,
-      rgb(255, 255, 255),
+      #828282,
       transparent
     );
   }

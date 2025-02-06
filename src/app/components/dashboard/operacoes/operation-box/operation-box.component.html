@@ -1,14 +1,15 @@
 <app-box class="box">
-  <h6 class="text-center m-0 title">{{name}}</h6>
-
-  <app-line class="m-3"></app-line>
-
-  <ng-content />
-
-  <div class="d-flex justify-content-center align-items-center">
-    <p class="text-center w-75">
-      {{footerMessage}}
-    </p>
+  <div class="d-flex flex-column justify-content-around h-100 gap-0">
+    <div>
+      <h6 class="text-center m-0 title">{{name}}</h6>
+      <hr>
+    </div>
+    <ng-content />
+    <div class="d-flex justify-content-center try">
+      <p class="text-center ">
+        {{footerMessage}}
+      </p>
+    </div>
   </div>
 
 </app-box>

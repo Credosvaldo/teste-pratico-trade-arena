@@ -1,3 +1,13 @@
-.black-background {
-  background-color: #0f0f0f;
+:host {
+  .black-background {
+    background-color: #0f0f0f;
+  }
+
+  label {
+    color: #cbcbcb;
+  }
+
+  button {
+    color: #cbcbcb;
+  }
 }
